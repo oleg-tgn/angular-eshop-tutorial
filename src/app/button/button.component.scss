@@ -1,5 +1,6 @@
 button {
     all: unset;
+    width: 200px;
     padding: 0 24px;
     border-radius: 4px;
     color: #fff;
@@ -8,6 +9,7 @@ button {
     background-color: #06f;
     transition: all .15s ease;
     cursor: pointer;
+    text-align: center;
 
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
