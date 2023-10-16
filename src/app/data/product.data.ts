@@ -3,8 +3,8 @@ import { Product } from "../types/card"
 export const product: Product = {
     id: 1,
     company: 'BMW',
-    title: 'BMW G310R 2023',
-    image: 'assets/img/bmw-g310r/bmw_g310r_black.jpg',
+    title: 'G310R 2023',
+    image: 'assets/img/bmw-g310r/bmw_g310r_blue-white.jpg',
     rating: {
         value: 5,
         reviews: 4,
