@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { evironment } from 'src/environments/environment';
+import { Component } from '@angular/core'
+import { product } from './data/product.data'
+import { Product } from './types/card'
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,5 @@ import { evironment } from 'src/environments/environment';
 })
 export class AppComponent {
   title = 'eshop';
-  inCart = 0;
-  apiUrl = `${evironment.api}`;
-
-  addToCart() {
-    this.inCart++;
-  }
-
-  removeFromCart() {
-    return this.inCart > 0 ? this.inCart-- : this.inCart;
-  }
+  product: Product = product
 }
