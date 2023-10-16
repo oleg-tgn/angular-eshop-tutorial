@@ -9,6 +9,4 @@ import { Product } from '../types/card'
 })
 export class CardComponent {
   @Input() product?: Product
-
-  constructor() {}
 }

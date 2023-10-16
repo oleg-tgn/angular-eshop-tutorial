@@ -1,10 +1,12 @@
 export interface Product {
+    id?: number
     company?: string
     title?: string
     image?: string
     rating?: ProductRating
     reviews?: number
     price?: ProductPrice
+    bage?: ProductBage
     deliveryOptions?: DeliveryOptions
     colors: {
         one: ProductColor
