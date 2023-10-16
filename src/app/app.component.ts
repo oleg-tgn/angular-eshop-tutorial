@@ -8,6 +8,6 @@ import { Product } from './types/card'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'eshop';
+  title = 'Motobikes Shop';
   product: Product = product
 }
