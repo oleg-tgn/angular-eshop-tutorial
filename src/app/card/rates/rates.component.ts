@@ -7,19 +7,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class RatesComponent implements OnInit {
 
-  @Input() maxStars?: number;
-  @Output() ratingChanged = new EventEmitter<number>();
-
-  rating: number = 0;
+  @Input() maxStars = 5;
+  @Input() rating: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  setRating(starNumber: number): void {
-    this.rating = starNumber;
-    this.ratingChanged.emit(this.rating);
   }
 
   isStarFilled(starNumber: number): boolean {
