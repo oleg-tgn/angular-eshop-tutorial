@@ -1,10 +1,15 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  templateUrl: './button.component.html',
+  template: `<button>{{value}}</button>`,
   styleUrls: ['./button.component.scss']
 })
-export class ButtonComponent{
-  @Input() text = 'Click me';
+export class ButtonComponent implements OnInit {
+  @Input() value = 'Add to cart';
+
+  constructor() {}
+
+  ngOnInit(): void {
+  }
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card.component';
 import { ButtonModule } from '../button/button.module';
+import { ButtonIconModule } from '../button/button-icon.module';
 import { BageModule } from './bage/bage.module';
 import { ColorOptionModule } from './color-option/color-option.module';
 import { RatesModule } from './rates/rates.module';
@@ -16,10 +17,11 @@ import { DeliveryOptionModule } from './delivery-option/delivery-option.module';
     CommonModule,
     ButtonModule,
     BageModule,
+    ButtonIconModule,
     ColorOptionModule,
     RatesModule,
     PriceModule,
-    DeliveryOptionModule
+    DeliveryOptionModule,
   ],
   exports: [
     CardComponent
