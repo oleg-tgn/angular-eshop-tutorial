@@ -16,7 +16,7 @@ export interface Product {
 }
 
 export interface ProductPrice {
-    value?: number
+    value: number
     discount?: number
 }
 

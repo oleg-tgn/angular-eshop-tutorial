@@ -16,7 +16,7 @@
                 <app-rates [rating]="product?.rating?.value || 0"></app-rates>
                 <div class="card__reviews">{{product?.rating?.reviews}} reviews</div>
             </div>
-            <app-price></app-price>
+            <app-price [price]="product?.price"></app-price>
 
             <div class="card__actions">
                 <app-button-icon [active]="isFavorite" (click)="toggleFavorite()"></app-button-icon>

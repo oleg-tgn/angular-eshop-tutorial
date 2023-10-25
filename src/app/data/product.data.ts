@@ -11,7 +11,7 @@ export const product: Product = {
     },
     price: {
         value: 5600,
-        discount: 0.17
+        discount: 0.05
     },
     deliveryOptions: {
         delivery: '21.07',
