@@ -1,1 +1,6 @@
-<p>rates works!</p>
+<div class="stars">
+    <span *ngFor="let star of [].constructor(maxStars); let i = index" (click)="setRating(i + 1)">
+        <i class="fas fa-star" [class.filled]="isStarFilled(i + 1)"></i>
+    </span>
+</div>
+  

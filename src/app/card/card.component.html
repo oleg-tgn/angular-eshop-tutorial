@@ -13,8 +13,8 @@
             <div class="card__title">{{product?.title}}</div>
 
             <div class="card__rates">
-                <app-rates></app-rates>
-                <div class="card__reviews">4 reviews</div>
+                <app-rates [maxStars]="product?.rating?.value"></app-rates>
+                <div class="card__reviews">{{product?.rating?.reviews}} reviews</div>
             </div>
             <app-price></app-price>
 
