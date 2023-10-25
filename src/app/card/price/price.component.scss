@@ -1,0 +1,28 @@
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+
+    &__discount {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+    }
+
+    &__prev {
+        color: #ccc;
+        margin-right: 5px;
+        text-decoration: line-through;
+    }
+
+    &__discount-bage {
+        display: inline-block;
+        background-color: red;
+        color: #fff;
+        font-size: 11px;
+        padding: 0 5px;
+        border-radius: 4px;
+    }
+}
+

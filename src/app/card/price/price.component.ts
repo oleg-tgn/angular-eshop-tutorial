@@ -4,14 +4,16 @@ import { ProductPrice } from 'src/app/types/card';
 @Component({
   selector: 'app-price',
   template: `
-    <div 
-      class="price__discount" 
-      [ngClass]="{'price__discount_hidden': !price?.discount}"
-    >
-      <div class="price__prev">{{price?.value}}$</div>
-      <div class="price__discount-bage">-{{discount}}%</div>
+    <div class="price-block">
+      <div 
+        class="price__discount" 
+        [ngClass]="{'price__discount_hidden': !price?.discount}"
+      >
+        <div class="price__prev">{{price?.value}}$</div>
+        <div class="price__discount-bage">-{{discount}}%</div>
+      </div>
+      <div class="price">{{ newPrice }}$</div>
     </div>
-    <div class="price">{{ newPrice }}$</div>
   `,
   styleUrls: ['./price.component.scss']
 })
