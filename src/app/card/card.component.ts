@@ -9,4 +9,10 @@ import { Product } from '../types/card'
 })
 export class CardComponent {
   @Input() product?: Product
+
+  isFavorite = false;
+
+  toggleFavorite() {
+    this.isFavorite = !this.isFavorite;
+  }
 }
