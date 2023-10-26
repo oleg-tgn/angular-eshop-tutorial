@@ -23,15 +23,15 @@ export const product: Product = {
         text: 'Customer choise'
     },
     colors: {
-        one: {
+        black: {
             color: 'black',
             image: 'assets/img/bmw-g310r/bmw_g310r_black.jpg',
         },
-        two: {
-            color: 'blue-white',
+        white: {
+            color: 'white',
             image: 'assets/img/bmw-g310r/bmw_g310r_blue-white.jpg',
         },
-        three: {
+        red: {
             color: 'red',
             image: 'assets/img/bmw-g310r/bmw_g310r_red.jpg',
         },        

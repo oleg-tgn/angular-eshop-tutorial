@@ -9,9 +9,9 @@ export interface Product {
     bage?: ProductBage
     deliveryOptions?: DeliveryOptions
     colors: {
-        one: ProductColor
-        two: ProductColor
-        three: ProductColor
+        black: ProductColor
+        white: ProductColor
+        red: ProductColor
     }
 }
 
@@ -37,6 +37,6 @@ export interface ProductBage {
 }
 
 export interface ProductColor {
-    color?: string
+    color: string
     image?: string
 }
