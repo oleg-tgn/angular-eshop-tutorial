@@ -7,9 +7,9 @@
         </figure>
         <div class="card__content">
             <div class="card__color-options">
-                <app-color-option [color]="product?.colors?.black?.color || 'white'" (click)="changeImage(product?.colors?.black?.image)"></app-color-option>
-                <app-color-option [color]="product?.colors?.white?.color || 'white'" (click)="changeImage(product?.colors?.white?.image)"></app-color-option>
-                <app-color-option [color]="product?.colors?.red?.color || 'white'"   (click)="changeImage(product?.colors?.red?.image)"></app-color-option>
+                <app-color-option *ngIf="product?.colors?.black" [color]="product?.colors?.black?.color || 'white'" (click)="changeImage(product?.colors?.black?.image)"></app-color-option>
+                <app-color-option *ngIf="product?.colors?.white" [color]="product?.colors?.white?.color || 'white'" (click)="changeImage(product?.colors?.white?.image)"></app-color-option>
+                <app-color-option *ngIf="product?.colors?.red" [color]="product?.colors?.red?.color || 'white'"   (click)="changeImage(product?.colors?.red?.image)"></app-color-option>
             </div>
             <div class="card__company">{{product?.company}}</div>
             <div class="card__title">{{product?.title}}</div>

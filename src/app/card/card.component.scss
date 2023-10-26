@@ -20,6 +20,7 @@
 
     &__inner {
         position: relative;
+        width: 100%;
     }
 
     &__rates {
@@ -36,10 +37,6 @@
         color: #999;
     }
 
-    &__gallery {
-        margin: 0 auto;
-    }
-
     &__color-options {
         display: flex;
         padding: 4px 0;
@@ -54,8 +51,18 @@
         width: 100%;
     }
 
+    &__gallery {
+        height: 127px;
+        margin: 0 auto;
+    }
+
     &__gallery-image {
-        width: 100%;
+        display: block;
+        width: auto;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
     }
 
     &__actions {

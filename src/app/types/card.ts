@@ -9,9 +9,9 @@ export interface Product {
     bage?: ProductBage
     deliveryOptions?: DeliveryOptions
     colors: {
-        black: ProductColor
-        white: ProductColor
-        red: ProductColor
+        black?: ProductColor
+        white?: ProductColor
+        red?: ProductColor
     }
 }
 

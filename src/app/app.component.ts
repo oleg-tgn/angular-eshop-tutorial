@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { product } from './data/product.data'
+import { product, products } from './data/product.data'
 import { Product } from './types/card'
 
 @Component({
@@ -9,5 +9,12 @@ import { Product } from './types/card'
 })
 export class AppComponent {
   title = 'Motobikes Shop';
-  product: Product = product
+  i = 0
+  product: Product = products[this.i]
+
+  next() {
+    this.i = this.i < products.length - 1 ? this.i + 1 : 0;
+    this.product = products[this.i]
+    console.log(this.i)
+  }
 }
